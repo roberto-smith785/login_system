@@ -1,0 +1,104 @@
+:root {
+    --primary: #b0bec5;
+    --secondary: #78909c;
+    --button: #37474f;
+    --text: #01579b;
+    --hover: #00897b;
+    --linkText: 18px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary);
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+.form-container {
+    border: 1px solid white;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    padding: 25px;
+    box-shadow: 1px -1px 4px 2px dimgray;
+}
+
+h2{
+    color:var(--text);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+p {
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid white;
+    letter-spacing: 2px;
+}
+
+.link-text {
+    font-size: var(--linkText);
+}
+
+.form-btn button {
+    width: 150px;
+    border: 1px solid var(--button);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 25px;
+    transition: background 0.25s;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background: var(--secondary);
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.form-btn button:hover {
+    color: white;
+    background: var(--button);
+}
+
+form {
+    padding: 25px 25px 0 25px;
+}
+
+form>div {
+    padding: 10px;
+}
+
+
+/*change password form styling start*/
+
+#account {
+    backdrop-filter: contrast(0.5);
+    pointer-events: none;
+    filter: opacity(0.5);
+}
+
+
+/*change password form styling end*/
+
+span {
+    margin-left: 12px;
+}
+
+.pass {
+    color: green;
+    text-align: start;
+}
+
+.fail {
+    color: red;
+    text-align: start;
+}
